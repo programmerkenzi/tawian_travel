@@ -19,17 +19,17 @@ export default () => {
     }
 
     return (
-        <div className=" transition-all duration-500 flex items-center h-[50px] outline-none    rounded-full  shadow hover:shadow-lg pr-1 ">
+        <div className=" transition-all duration-500 flex items-center w-[95%] sm:w-[80%] md:w-[500px]  h-[30px] lg:h-[50px] outline-none rounded-full  shadow hover:shadow-lg pr-1 ">
             <input
                 value={query}
                 type="text"
-                className=" flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 "
+                className=" flex-grow pl-2 lg:pl-5 bg-transparent outline-none text-[5px] lg:text-sm text-gray-600 "
                 placeholder={type === 'food' ? '滷肉飯...' : type === 'spot' ? '櫻花...' : '跨年...'}
                 onChange={(e) => setQuery(e.target.value)}
             />
             <Selector toggleOptions={() => { setOnSelectCity(!onSelectCity); setOnSelectType(false) }} showOptions={onSelectCity} options={cities} value={city} handleOnChange={(value) => setCity(value)} />
             <Selector toggleOptions={() => { setOnSelectType(!onSelectType); setOnSelectCity(false) }} showOptions={onSelectType} options={searchTypes} value={type} handleOnChange={(value) => setType(value)} />
-            <SearchIcon className="transition-all duration-500 hidden md:inline-flex  text-white text-[50px]   h-[40px]  rounded-full p-2 cursor-pointer  bg-blue-500 hover:text-blue-700" onClick={() => handleSearch()} />
+            <SearchIcon className="transition-all duration-500  lg:inline-flex  text-white text-[50px] h-6 lg:h-[40px]  rounded-full p-1 lg:p-2 cursor-pointer  bg-blue-500 hover:text-blue-700" onClick={() => handleSearch()} />
         </div>
     )
 }

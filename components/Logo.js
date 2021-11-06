@@ -1,12 +1,13 @@
 export default () => {
 
     return (
-        <div className=' flex flex-row space-x-1  absolute left-5'>
+        <div className=' flex  flex-row space-x-0  sm:space-x-1  absolute left-0 sm:left-5 scale-50 sm:scale-100'>
 
-            <i className="twicon-main-island text-blue-500 text-[50px]"></i>
-            <div className=' flex flex-col mt-1'>
-                <span className='text-blue-500 font-black not-italic leading-tight'>Taiwan</span>
-                <span className='text-blue-500 font-black ml-[8px] not-italic leading-tight'>Travel</span>
+            <i className="twicon-main-island opacity-50 md:opacity-100 text-blue-500 text-[50px]"></i>
+            <div className=' absolute md:relative     sm:flex flex-col mt-1 text-blue-500 font-black  not-italic leading-tight'>
+                <span className=' text-[10px] sm:hidden' >Taiwan  Travel</span>
+                <span className='hidden sm:block' >Taiwan</span>
+                <span className='hidden sm:block ml-[8px]'>Travel</span>
             </div>
         </div>
     )

@@ -24,12 +24,13 @@ export default function Home({ name }) {
         />
       </Head>
       <Header />
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+      <main className="flex flex-col items-center justify-center w-full flex-1 px-12 text-center">
         <Carousel />
         <span>Hi,{name}</span>
         <span className=" text-xl text-blue-800">is authenticated: {isAuthenticated.toString()}</span>
         <button onClick={() => dispatch(setIsAuthenticated(!isAuthenticated))} className="button">setIsAuthenticated</button>
       </main>
+
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
 
@@ -41,7 +42,7 @@ export default function Home({ name }) {
 
 Home.getInitialProps = async () => {
   const randomCities = getRandomItem(city, 10)
-  const spots = await tourism.getScenicSpots('Taipei', '櫻花')
-  console.log(`spots`, spots)
+  // const spots = await tourism.getScenicSpots('Taipei', '櫻花')
+  // console.log(`spots`, spots)
   return { city: randomCities }
 }
