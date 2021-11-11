@@ -23,7 +23,7 @@ export default () => {
             <input
                 value={query}
                 type="text"
-                className=" flex-grow pl-2 lg:pl-5 bg-transparent outline-none text-[5px] lg:text-sm text-gray-600 "
+                className=" flex-grow pl-2 lg:pl-5 bg-transparent outline-none text-[10px] lg:text-sm text-gray-600 "
                 placeholder={type === 'food' ? '滷肉飯...' : type === 'spot' ? '櫻花...' : '跨年...'}
                 onChange={(e) => setQuery(e.target.value)}
             />

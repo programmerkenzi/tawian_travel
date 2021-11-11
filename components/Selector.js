@@ -1,7 +1,7 @@
 import { ChevronDownIcon } from '@heroicons/react/solid';
 export default ({ options, value, showOptions, handleOnChange, toggleOptions }) => {
     return (
-        <div className={`relative flex flex-col w-[60px] mr-2 md:mr-0    md:w-[80px]  text-[3px] sm:text-xs lg:text-base items-center  cursor-pointer  transition duration-500 ease-in-out space-y-10  text-gray-600 `}
+        <div className={`relative flex flex-col w-[60px] mr-2 md:mr-0    md:w-[80px]  text-[10px] sm:text-xs lg:text-base items-center  cursor-pointer  transition duration-500 ease-in-out space-y-10  text-gray-600 `}
             onClick={toggleOptions}
         >
 
