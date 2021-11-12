@@ -3,7 +3,7 @@ import { LocationMarkerIcon, PhotographIcon } from '@heroicons/react/solid';
 
 
 
-export default ({ imageUrl, name, location }) => {
+export default ({ imageUrl, name, location, }) => {
 
     return (
 

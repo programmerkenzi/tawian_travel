@@ -24,8 +24,8 @@ export default ({ items }) => {
                         />
                         <div className=" absolute flex flex-row left-1 top-1 font-semibold text-xs text-white  items-center justify-between md:text-base md:left-2 md:top-2 opacity-95">
                             <LocationMarkerIcon className=" h-3 md:h-4" />
-                            <span >{item.Location}</span>
-                            <span>{item.Name}</span>
+                            <span >{item?.Location}</span>
+                            <span>{item?.Name}</span>
                         </div>
 
                     </div>
